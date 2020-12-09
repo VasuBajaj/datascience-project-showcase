@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IPP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./../static/insurance.css">
+</head>
+<body >
+<form class="w3-container w3-card-1" align="center" action="{{ url_for('predictInsurance')}}" method="post">
+<h1 class="w3-text-white" class="w3-input w3-border" >Insurance Premium Predictor</h1>
+<table align = "center">
+<tr><td class="w3-text-white" >Name</td><td><input class="w3-input w3-border" type="text" name="Name" required="required"/></td></tr>
+<tr><td class="w3-text-white" >Age</td><td><input class="w3-input w3-border" type="text" name="Age" required="required"/></td></tr>
+<tr><td class="w3-text-white" >BMI</td><td><input class="w3-input w3-border" type="text" name="BMI" required="required"/></td></tr>
+<tr><td class="w3-text-white" >Children</td><td><input class="w3-input w3-border" type="text" name="Children" required="required"/></td></tr>
+<tr><td class="w3-text-white" >Sex</td><td><input class="w3-input w3-border" type="text" name="Sex" required="required"/></td></tr>
+<tr><td class="w3-text-white" >Smoker</td><td><input class="w3-input w3-border" type="text" name="Smoker" required="required"/></td></tr>
+<!--<tr><td class="w3-text-white" >Income</td><td><input class="w3-input w3-border" type="text" name="Income" required="required"/></td></tr>-->
+</table></br></br>
+  <button type="submit" color="#66ccff">Calcuate My Premium</button></br></br>
+  <h2 class="w3-text-white">  {{prediction_text}} </h2>
+</form>
+</body>
+</html>
