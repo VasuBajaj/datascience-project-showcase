@@ -16,8 +16,8 @@ Below are the stats I observed for this project.
 
 |Model| size with pickle (in MB) | size with BZ2 (in MB)|
 |:---:|:---:|:----:|
-| User2User|||
-| Item2Item|||
+| User2User|149|44.5|
+| Item2Item|105|36|
 
 
 ### Issues:
